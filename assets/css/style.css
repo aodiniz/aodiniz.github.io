@@ -1,0 +1,100 @@
+/* --- Tags --- */
+
+ul {
+    list-style-type: none;
+}
+
+ion-icon {
+    color: black;
+}
+
+body { margin:0px; }
+
+header {
+    box-sizing: border-box;
+    width: 100vw;
+    height: 30px;
+}
+
+footer {
+    box-sizing: border-box;
+    width: 100vw;
+    height: 100px;
+}
+
+
+/* --- Classes --- */
+
+.fc-row {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    height: inherit;
+}
+
+.fc-column {
+    display: flex;
+    flex-flow: column wrap;
+    /* min-height: calc(100vh - 200px); */
+}
+
+.fc-row,
+.fc-column > * {
+    flex: 1;
+    margin-right: 10px;
+    margin-left: 10px;
+    /* padding: 20px; */
+    background-color: lightgray;
+    /* border-radius: 10px; */
+    /* min-width: 200px; */
+    /* height: inherit; */
+}
+
+.header-nav {
+    display: inline-flex;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.nav-ul {
+    display: flex;
+    gap: 10px;
+    margin: auto;
+    padding: 0%;
+}
+
+
+/* --- IDs --- */
+
+#header-nav {
+    /* align-items: center; */
+    /* position: sticky; */
+    top: 0;
+    padding: 1.5rem 2rem;
+    background-color: red;
+}
+
+#header-nav.green {
+    background-color: green;
+}
+
+#header-nav.blue {
+    background-color: blue;
+}
+
+/* #header-nav-links {
+    display: flex;
+    flex-direction: column;
+} */
+
+#header-nav-contact {
+    /* justify-content: center; */
+    box-sizing: border-box;
+}
+
+#about-me,
+#my-skills,
+#my-projects {
+    width: 100vw;
+    min-height: 300px;
+}
