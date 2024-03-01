@@ -196,10 +196,10 @@ body.nav-active { overflow: hidden; }
 .h4 { font-size: var(--fs-4); }
 
 .btn {
-  color: var(--cinnamon-satin);
+  color: var(--black-coral);
   font-size: var(--fs-6);
   font-weight: var(--fw-700);
-  border: 2px solid var(--cinnamon-satin);
+  border: 2px solid var(--black-coral);
   max-width: max-content;
   padding: 12px 28px;
   border-radius: var(--radius-pill);
@@ -211,7 +211,7 @@ body.nav-active { overflow: hidden; }
 
 .btn-primary,
 .btn-secondary:is(:hover, :focus-visible) {
-  background-color: var(--cinnamon-satin);
+  background-color: var(--black-coral);
   color: var(--white);
 }
 
@@ -334,7 +334,7 @@ body.nav-active { overflow: hidden; }
 
 .contact-link { transition: var(--transition-1); }
 
-.contact-link:is(:hover, :focus-visible) { color: var(--cinnamon-satin); }
+.contact-link:is(:hover, :focus-visible) { color: var(--black-coral); }
 
 .overlay {
   position: fixed;
@@ -440,7 +440,9 @@ body.nav-active { overflow: hidden; }
 
 .progress-fill { height: inherit; }
 
-.about-card { text-align: center; }
+.about-card {
+  text-align: center;
+}
 
 .about-card .card-icon {
   max-width: max-content;
@@ -448,6 +450,41 @@ body.nav-active { overflow: hidden; }
 }
 
 .about-card .card-title { margin-block: 16px 10px; }
+
+.skills-icons {
+  /* display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; */
+  display: grid;
+  grid-template-columns: 100px 100px;
+  gap: 10px;
+  row-gap: 10px;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.skill-icon {
+  width: 90px;
+  height: 90px;
+  position: relative;
+  display: inline-block;
+}
+
+.skill-icon-tooltip {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+ 
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 1;
+}
+
 
 
 
@@ -730,7 +767,7 @@ textarea.input-field {
     transition: var(--transition-1);
   }
 
-  .navbar-link:is(:hover, :focus-visible) { color: var(--cinnamon-satin); }
+  .navbar-link:is(:hover, :focus-visible) { color: var(--black-coral); }
 
   .navbar .social-link {
     color: var(--charcoal);
@@ -782,7 +819,7 @@ textarea.input-field {
     align-items: center;
   }
 
-  .about .grid-list { grid-template-columns: repeat(4, 1fr); }
+  .about .grid-list { grid-template-columns: repeat(3, 1fr); }
 
 
 

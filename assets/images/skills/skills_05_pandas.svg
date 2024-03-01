@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="37.373318mm"
+   height="37.373375mm"
+   viewBox="0 0 37.373318 37.373374"
+   version="1.1"
+   id="svg1120"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1117" />
+  <g
+     id="g3644"
+     transform="translate(-96.716776,-151.37531)">
+    <title>Pandas</title>
+    <circle
+       style="fill:#cccccc;fill-opacity:0.2;stroke:#393939;stroke-width:0.265;stroke-miterlimit:4;stroke-dasharray:1.06, 0.53, 0.265, 0.53;stroke-dashoffset:0;stroke-opacity:1"
+       id="path13481-23"
+       class="circle-frame"
+       cx="115.40343"
+       cy="170.06195"
+       r="18.554167" />
+    <g
+       id="g1656"
+       transform="matrix(0.22586227,0,0,0.22586227,100.74034,155.35975)">
+      <path
+         fill="#130754"
+         d="m 46.236,7.567 h 13.99 v 29.047 h -13.99 z m 0,59.668 h 13.99 V 96.28 h -13.99 z"
+         id="path1635" />
+      <path
+         fill="#ffca00"
+         d="m 46.236,45.092 h 13.99 v 13.705 h -13.99 z"
+         id="path1637" />
+      <path
+         fill="#130754"
+         d="M 23.763,31.446 H 37.752 V 128 H 23.762 Z M 68.245,91.2 h 13.99 v 29.046 h -13.99 z m 0,-59.72 h 13.99 v 29.047 h -13.99 z"
+         id="path1639" />
+      <path
+         fill="#e70488"
+         d="m 68.245,69.011 h 13.99 v 13.705 h -13.99 z"
+         id="path1641" />
+      <path
+         fill="#130754"
+         d="m 90.248,0 h 13.99 v 96.554 h -13.99 z"
+         id="path1643" />
+    </g>
+  </g>
+</svg>

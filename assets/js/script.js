@@ -13,6 +13,31 @@ const addEventOnElements = function (elements, eventType, callback) {
 }
 
 
+/**
+ * SKIL ICON ANIMATION
+ */
+
+const svgIconHighlight = function(s) {
+  var svgCircleFrame = s.contentDocument.getElementsByClassName("circle-frame")[0];
+  var svgCircleStyle = svgCircleFrame.getAttribute("style");
+  svgCircleFrame.setAttribute("style",
+    svgCircleStyle
+    .replace(/fill:[^;]+/, "fill:#969696")
+    .replace(/stroke-dasharray:[^;]+/, "stroke-dasharray:none")
+  );
+}
+
+const svgIconGrayout = function(s) {
+  var svgCircleFrame = s.contentDocument.getElementsByClassName("circle-frame")[0];
+  var svgCircleStyle = svgCircleFrame.getAttribute("style");
+  svgCircleFrame.setAttribute("style",
+    svgCircleStyle
+    .replace(/fill:[^;]+/, "fill:#cccccc")
+    .replace(/stroke-dasharray:[^;]+/, "stroke-dasharray:1.06, 0.53, 0.265, 0.53")
+  );
+}
+
+
 
 /**
  * NAVBAR TOGGLE FOR MOBILE
@@ -69,4 +94,12 @@ for (let i = 0, len = revealDelayElements.length; i < len; i++) {
 }
 
 window.addEventListener("scroll", reveal);
-window.addEventListener("load", reveal);
+window.addEventListener("load", function() {
+  reveal();
+
+  var svgObjects = document.getElementsByClassName("skill-icon");
+  for (let i = 0; i < svgObjects.length; i++) {
+    svgObjects[i].setAttribute("onmouseenter", "svgIconHighlight(this)")
+    svgObjects[i].setAttribute("onmouseout", "svgIconGrayout(this)")
+  }
+});
